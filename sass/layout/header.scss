@@ -1,0 +1,94 @@
+.header{
+    font-size: 2.5rem;
+    height: 100vh;
+    color: $color-grey-light-1;
+    background-repeat: no-repeat; 
+    background-image: 
+                linear-gradient(rgba($color-primary,.90),
+                rgba($color-secondary,.90)),
+                url(https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5rem;
+    &__logo{
+
+        font-size: 4rem;
+        font-weight: bold;
+        animation: degraded 6s ease-in-out infinite;
+        background: linear-gradient(-45deg,
+                                $color-quaternary,
+                                $color-animation-1,
+                                $color-quintary
+                                );
+        background-size: 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+
+    &__list{
+        margin: auto 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        column-gap: 5rem;
+        padding-left:10%;
+
+        &--anchor{
+            text-decoration: none;
+            color: $color-grey-light-1;
+            position: relative;
+            
+            &:after{
+                position: absolute;
+                content: "";
+                display: block;
+                width: 0;
+                height: 1.5px;
+                background-color: $color-quaternary;
+                transition: all .3s;
+            }
+            &:hover:after{
+                width: 100%;
+            }
+            &:hover{
+                color: $color-quaternary;
+            }
+        }
+        
+    }
+}
+.section{
+    text-align: center;
+    margin:18vh;
+    
+    &__title{
+        font-size: 5rem;
+        margin-bottom: 5rem;
+        font-weight: 900;
+        padding-bottom: 5rem;
+
+        &>span{
+            animation: degraded 6s ease-in-out infinite;
+            background: linear-gradient(-45deg,
+                                $color-quaternary,
+                                $color-animation-1,
+                                $color-quintary
+                                );
+            background-size: 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+.btn{
+    color: $color-secondary;
+}
