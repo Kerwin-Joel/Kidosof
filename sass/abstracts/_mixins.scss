@@ -1,0 +1,12 @@
+@mixin span-degraded {
+    animation: degraded 6s ease-in-out infinite;
+    background: linear-gradient(-45deg,
+                        $color-quaternary,
+                        $color-animation-1,
+                        $color-quintary
+                        );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

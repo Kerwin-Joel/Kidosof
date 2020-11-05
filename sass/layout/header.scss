@@ -1,17 +1,36 @@
+@import "../abstracts/mixins";
+
 .header{
     font-size: 2.5rem;
     height: 100vh;
     color: $color-grey-light-1;
     background-repeat: no-repeat; 
     background-image: 
-                linear-gradient(rgba($color-primary,.90),
-                rgba($color-secondary,.90)),
-                url(https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) ;
-    background-size: cover;
-    background-position: center;
+                linear-gradient(rgba($color-primary,.90),rgba($color-secondary,.90));
+    background-size: contain;
+    background-position:center;
+    position: relative;
+    
+    img{
+        z-index: -1;
+        position: absolute;
+        left: -10rem;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40rem;
+        height: 60rem;
+    }
+    
+}
+svg{
+    position: absolute;
+    bottom: 0;
+    
 }
 
 .navigation{
+    z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -20,16 +39,7 @@
 
         font-size: 4rem;
         font-weight: bold;
-        animation: degraded 6s ease-in-out infinite;
-        background: linear-gradient(-45deg,
-                                $color-quaternary,
-                                $color-animation-1,
-                                $color-quintary
-                                );
-        background-size: 300%;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include span-degraded;
     }
     
 
@@ -67,7 +77,7 @@
 }
 .section{
     text-align: center;
-    margin:18vh;
+    margin:12.5vh;
     
     &__title{
         font-size: 5rem;
@@ -76,18 +86,10 @@
         padding-bottom: 5rem;
 
         &>span{
-            animation: degraded 6s ease-in-out infinite;
-            background: linear-gradient(-45deg,
-                                $color-quaternary,
-                                $color-animation-1,
-                                $color-quintary
-                                );
-            background-size: 300%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            @include span-degraded;
         }
     }
+    
 }
 .btn{
     color: $color-secondary;

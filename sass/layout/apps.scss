@@ -1,0 +1,75 @@
+@import "../abstracts/mixins";
+
+.apps{
+    width: 100vw;
+    height: 40rem;
+    color:$color-grey-light-1;
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  $color-animation-2 0%,rgba(255,255,255,0) 5rem);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	margin: auto;
+	overflow:hidden;
+    position: relative;
+    height: 40rem;
+
+    span{
+        @include span-degraded;
+    }
+    
+    img{
+        width: 30rem;
+        height: 25rem;
+    }
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+        position: absolute;
+		height: 100%;
+		width: 20rem;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+        width: calc(250px * 14);
+        margin-top: 5rem;
+	}
+	
+	.slide {
+		height: 100px;
+        width: 250px;
+        margin: 0 5rem;
+	}
+}
