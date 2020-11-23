@@ -1,0 +1,43 @@
+@import "../abstracts/variables";
+
+.description{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: $color-grey-light-1;
+    height: 60rem;
+
+    p{
+        color: $color-grey-light-2;
+        margin-top: 1.5rem;
+    }
+    
+    &__left{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+        align-items: center;
+        margin: auto 10% auto 25%;
+        
+        &__top{
+            margin-bottom: 4rem;
+        }
+        &__bottom{
+            margin-top: 5rem;
+        }
+    }
+    &__rigth{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &__center{
+            margin: auto 25% auto 10%;
+        }
+        img{
+            border-radius: 50%;
+            width: 8rem;
+            height: 8rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

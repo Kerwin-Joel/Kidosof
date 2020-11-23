@@ -16,6 +16,12 @@ html {
 h1 {
   font-family: "Roboto", sans-serif; }
 
+h2 {
+  font-size: 3.3rem; }
+
+p {
+  font-size: 2rem; }
+
 .btn {
   text-transform: uppercase; }
 
@@ -106,7 +112,8 @@ svg {
       -webkit-text-fill-color: transparent; }
 
 .btn {
-  color: #782fff; }
+  color: #782fff;
+  position: relative; }
 
 .apps {
   width: 100vw;
@@ -161,13 +168,94 @@ svg {
     width: 250px;
     margin: 0 5rem; }
 
+.description {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  color: #f9f7f6;
+  height: 60rem; }
+  .description p {
+    color: #aaa;
+    margin-top: 1.5rem; }
+  .description__left {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    margin: auto 10% auto 25%; }
+    .description__left__top {
+      margin-bottom: 4rem; }
+    .description__left__bottom {
+      margin-top: 5rem; }
+  .description__rigth {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .description__rigth__center {
+      margin: auto 25% auto 10%; }
+    .description__rigth img {
+      border-radius: 50%;
+      width: 8rem;
+      height: 8rem;
+      margin-bottom: 1rem; }
+
+.promotion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .promotion__title {
+    margin-top: 3rem;
+    width: 50%;
+    color: #f9f7f6;
+    font-size: 4rem;
+    margin-bottom: 2.5rem; }
+  .promotion__subTitle {
+    width: 50%;
+    color: #aaa;
+    font-size: 2rem;
+    margin-bottom: 4rem; }
+  .promotion__btn {
+    font-size: 2.5rem; }
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  padding-top: 15rem;
+  padding-bottom: 3rem;
+  background: -webkit-linear-gradient(to top, #431596, #2B0F60);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #431596, #2B0F60);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .footer__left {
+    padding-left: 15rem;
+    animation: degraded 6s ease-in-out infinite;
+    background: linear-gradient(-45deg, #26F0F1, #b77dfb, #EEFC57);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .footer__rigth {
+    padding-right: 15rem; }
+    .footer__rigth > span {
+      animation: degraded 6s ease-in-out infinite;
+      background: linear-gradient(-45deg, #26F0F1, #b77dfb, #EEFC57);
+      background-size: 300%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
 .btn {
   background-color: #26F0F1;
   border-radius: 5px;
   padding: .4em;
   text-decoration: none;
   display: inline-block;
-  transition: all .2s; }
+  transition: all .2s;
+  z-index: 100000; }
   .btn:hover {
     transform: translateY(-3px);
     color: blue;
@@ -180,7 +268,7 @@ svg {
   display: block;
   position: fixed;
   right: -30px;
-  bottom: -35px;
+  bottom: 0;
   visibility: hidden;
   background-color: transparent;
   width: 200px;

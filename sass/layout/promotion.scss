@@ -1,0 +1,26 @@
+.promotion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__title{
+        margin-top: 3rem;
+        width: 50%;
+        color : $color-grey-light-1;
+        font-size: 4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__subTitle{
+        width: 50%;
+        color: $color-grey-light-2;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    &__btn{
+        font-size: 2.5rem;
+    }
+}

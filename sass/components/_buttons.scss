@@ -5,6 +5,7 @@
     text-decoration: none;
     display: inline-block;
     transition: all .2s;
+    z-index: 100000;
     
     &:hover{
         transform: translateY(-3px);
@@ -20,7 +21,7 @@
     display:block;
     position:fixed;
     right: -30px;
-    bottom: -35px;
+    bottom: 0;
     visibility:hidden;
     background-color:transparent;
     width:200px;
