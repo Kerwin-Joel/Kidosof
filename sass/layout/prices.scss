@@ -1,0 +1,68 @@
+.prices{
+    border: 1px solid red;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    &__plata{
+        border: 1px solid rgb(255, 115, 0);
+        width: 30vw;
+        border-radius: 3.5rem;
+    }
+    &__img{
+        border: 1px solid pink;
+        & > img{
+            display:block;
+            width:70%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+    }
+    &__description{
+        border: 1px solid blue;
+    }
+    &__name{
+        border: 1px solid red;
+        text-align: center;
+        font-size: 4.5rem;
+
+    }
+    &__overwiev{
+        border: 1px solid skyblue;
+        margin: 2rem auto;
+        padding: 0 3rem;
+        font-size: 2rem;
+        text-align: center;
+        color: $color-grey-light-1;
+
+    }
+    &__list{
+        border: 1px solid yellow;
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 2rem auto;
+        font-size: 1.3rem;
+        color: $color-grey-light-1;
+        & > li{
+            border: 1px solid blue;
+
+        }
+    }
+
+
+
+
+    &__price{
+        border: 1px solid skyblue;
+        text-align: center;
+
+    }
+    &__amount{
+        border: 1px solid brown;
+    }
+    &__button{
+        font-size:2rem;
+        margin: 1rem
+    }
+}

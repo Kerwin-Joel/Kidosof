@@ -1,12 +1,23 @@
+@import "../abstracts/mixins";
+
+
+
 h1{
     font-family: $font-primary;
 }
 h2{
     font-size: 3.3rem;
 }
+h3{
+    font-size: 3rem;
+    color:$color-grey-light-1;
+}
 p{
     font-size: 2rem;
 }
 .btn{
     text-transform: uppercase;
+}
+span{
+    @include span-degraded;
 }

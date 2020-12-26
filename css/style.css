@@ -19,11 +19,23 @@ h1 {
 h2 {
   font-size: 3.3rem; }
 
+h3 {
+  font-size: 3rem;
+  color: #f9f7f6; }
+
 p {
   font-size: 2rem; }
 
 .btn {
   text-transform: uppercase; }
+
+span {
+  animation: degraded 6s ease-in-out infinite;
+  background: linear-gradient(-45deg, #26F0F1, #b77dfb, #EEFC57);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 @keyframes degraded {
   0% {
@@ -103,13 +115,6 @@ svg {
     margin-bottom: 5rem;
     font-weight: 900;
     padding-bottom: 5rem; }
-    .section__title > span {
-      animation: degraded 6s ease-in-out infinite;
-      background: linear-gradient(-45deg, #26F0F1, #b77dfb, #EEFC57);
-      background-size: 300%;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent; }
 
 .btn {
   color: #782fff;
@@ -248,10 +253,75 @@ svg {
       background-clip: text;
       -webkit-text-fill-color: transparent; }
 
+.information__top, .information__bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 1rem;
+  margin: 2rem;
+  padding-top: 1rem; }
+
+.information__text {
+  margin: auto;
+  text-align: center; }
+
+.information__img {
+  width: 300px;
+  height: 300px;
+  margin: auto; }
+
+.prices {
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .prices__plata {
+    border: 1px solid #ff7300;
+    width: 30vw;
+    border-radius: 3.5rem; }
+  .prices__img {
+    border: 1px solid pink; }
+    .prices__img > img {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+      padding: 2rem 0; }
+  .prices__description {
+    border: 1px solid blue; }
+  .prices__name {
+    border: 1px solid red;
+    text-align: center;
+    font-size: 4.5rem; }
+  .prices__overwiev {
+    border: 1px solid skyblue;
+    margin: 2rem auto;
+    padding: 0 3rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #f9f7f6; }
+  .prices__list {
+    border: 1px solid yellow;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 1.3rem;
+    color: #f9f7f6; }
+    .prices__list > li {
+      border: 1px solid blue; }
+  .prices__price {
+    border: 1px solid skyblue;
+    text-align: center; }
+  .prices__amount {
+    border: 1px solid brown; }
+  .prices__button {
+    font-size: 2rem;
+    margin: 1rem; }
+
 .btn {
   background-color: #26F0F1;
-  border-radius: 5px;
-  padding: .4em;
+  border-radius: 3rem;
+  padding: 1.5rem 2rem;
   text-decoration: none;
   display: inline-block;
   transition: all .2s;
