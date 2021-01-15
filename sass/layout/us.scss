@@ -1,0 +1,46 @@
+.nav--us{
+    background: linear-gradient(to top, $color-primary, $color-animation-2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.us{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    grid-gap: 2rem;
+    padding: 0 4rem;
+    color: $color-grey-light-1;
+    margin-bottom:5rem;
+    &__main{
+        margin: auto;
+    }
+    &__img{
+        & > div{
+            margin: auto;
+        }
+    }
+    background: linear-gradient(to bottom, $color-primary, $color-animation-2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.team{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-gap: 2rem;
+    padding: 0 4rem;
+    margin-bottom: 5rem;
+
+    &__paragraph{
+        text-align: center;
+        margin: auto;
+    }
+    &__video{
+        margin: auto;
+        border-radius: 2rem;
+        width: 100%;
+        height: auto;
+    }
+}
+.container__btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+

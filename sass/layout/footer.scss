@@ -1,21 +1,19 @@
 @import "../abstracts/variables";
 .footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap:3rem;
+    justify-items: center;
     align-items: center;
     font-size: 2rem;
-    padding-top: 15rem;
-    padding-bottom: 3rem;
-    background: -webkit-linear-gradient(to top, $color-primary, $color-animation-2);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, $color-primary, $color-animation-2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    padding:10rem 0 5rem;
+    
     &__left{
-        padding-left:15rem;
         @include span-degraded;
     }
     &__rigth{
-        padding-right:15rem;
+        padding:0 5rem;
         &>span{
             @include span-degraded;
         }

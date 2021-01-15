@@ -1,18 +1,32 @@
 .information{
+    background: linear-gradient(to top, $color-primary, $color-animation-2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     &__top,&__bottom{
         display:grid;
         grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
         grid-gap: 1rem;
         margin: 2rem;
         padding-top: 1rem;
+        margin-bottom: 0;
     }
     &__text{
         margin:auto;
         text-align: center;
+        
     }
     &__img{
-        width:300px;
-        height: 300px;
+        width:100%;
+        height: 30rem;
         margin: auto;
     }
+}
+
+.title__section{
+    background: linear-gradient(to bottom, $color-primary, $color-animation-2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    padding: 10rem 0 6rem;
+}
+
+.nav--section{
+    background: linear-gradient(to bottom, $color-primary, $color-animation-2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
