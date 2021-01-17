@@ -1,8 +1,8 @@
 .prices{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
-    grid-gap: 30px;
-    margin: auto;
+    grid-gap: 5rem;
+    padding: 0 7rem;
 
     &__plata,&__bronce,&__oro{
         position:relative;

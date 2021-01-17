@@ -1,0 +1,21 @@
+@import "../abstracts/variables";
+
+.cdescription{
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    &__left{
+        padding: 0 20%;
+        color: $color-grey-light-1;
+        margin: auto;
+    }
+    &__rigth{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > img{
+            width: 80%;
+            height: 80%;
+            border-radius: 2rem;
+        }
+    }
+}

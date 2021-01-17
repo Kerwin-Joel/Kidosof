@@ -7,6 +7,8 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 </head>
 <body>
     <div class="phone-call cbh-phone cbh-green cbh-show  cbh-static"
@@ -26,9 +28,11 @@
         
         
         <nav class="navigation">
-            <div class="navigation__logo">KIDOSOFT</div>
+            <div class="navigation__logo" id="div1">KIDOSOFT</div>
+            <box-icon name='menu-alt-right' size="50px" color="#f9f7f6" class="menu"></box-icon>
             <ul class="navigation__list">
-                <li class="navigation__list__item"><a class="navigation__list--anchor" href="#">Clientes</a></li>
+                <box-icon name='x' class="navigation__list__item x" size="30px" color="#A4A4A4" ></box-icon>
+                <li class="navigation__list__item"><a class="navigation__list--anchor" href="./components/customers.html">Clientes</a></li>
                 <li class="navigation__list__item"><a class="navigation__list--anchor" href="./components/section.html">Servicios</a></li>
                 <li class="navigation__list__item"><a class="navigation__list--anchor" href="./components/us.html">Nosotros</a></li>
             </ul>
@@ -107,9 +111,11 @@
         <div class="description__rigth">
             <div class="description__rigth__center">
                 <img src="https://images.unsplash.com/photo-1579205149708-f5b24c5a04e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1595&q=80" alt="">
-                <h2>Un negocio digital es más productivo y eficiente.</h2>
-                <p>Diana, directora creativa en KIDOSOFT.</p>
+                <h1>Un negocio digital es más productivo y eficiente.
+                    <span>Diana, directora creativa en KIDOSOFT.</span>
+                </h1>
             </div>
+            
         </div>
     </section>
     <!-- <section class="customers">
@@ -123,13 +129,15 @@
         </ul>
     </section> -->
     <div class="promotion">
-        <h1 class="promotion__title">Accede a los beneficios de pequeña empresa. </h1>
+        <h1 class="promotion__title">Accede a los beneficios empresariales. </h1>
         <p class="promotion__subTitle">Comunicate con nuestros asesores para ayudarte a crecer.</p>
         <a  class="btn promotion__btn" href="https://twitter.com/home?lang=es">Obtener Promoción</a>
     </div>
     <footer class="footer">
         <div class="footer__left">KIDOSOFT ℠</div>
-        <div class="footer__rigth"><span>Diseñado y construido con mucho cariño</span> 🖤 <span>para apoyar</span> <br><span>a las pequeñas empresas de nuestro Perú</span> 🇵🇪</div>
+        <div class="footer__rigth"><span>Diseñado y construido con mucho cariño</span> 🖤 <span>para apoyar</span><span>a las pequeñas empresas de nuestro Perú</span> 🇵🇪</div>
     </footer>
 </body>
+<script src="./index.js"></script>
+
 </html>

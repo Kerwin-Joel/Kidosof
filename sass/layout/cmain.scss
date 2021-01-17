@@ -1,0 +1,17 @@
+@import "../abstracts/variables";
+
+.cmain{
+    text-align: center;
+    background: linear-gradient(to bottom, $color-primary, $color-animation-2);
+    margin-bottom: 3rem;
+    &__title{
+        color:$color-grey-light-1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+}
+.btn{
+    font-size: 2rem;
+}

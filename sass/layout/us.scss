@@ -4,12 +4,11 @@
 .us{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
-    grid-gap: 2rem;
-    padding: 0 4rem;
     color: $color-grey-light-1;
     margin-bottom:5rem;
     &__main{
         margin: auto;
+        padding: 0 3rem;
     }
     &__img{
         & > div{
@@ -23,18 +22,17 @@
 .team{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-    grid-gap: 2rem;
-    padding: 0 4rem;
     margin-bottom: 5rem;
 
     &__paragraph{
         text-align: center;
         margin: auto;
+        padding: 0 3rem;
     }
     &__video{
         margin: auto;
         border-radius: 2rem;
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 }

@@ -46,7 +46,6 @@ span {
     background-position: 0 50%; } }
 
 .header {
-  font-size: 2.5rem;
   height: 100vh;
   color: #f9f7f6;
   background-repeat: no-repeat;
@@ -84,6 +83,7 @@ svg {
     background-clip: text;
     -webkit-text-fill-color: transparent; }
   .navigation__list {
+    font-size: 2.5rem;
     margin: auto 0;
     list-style: none;
     display: flex;
@@ -109,7 +109,7 @@ svg {
 
 .section {
   text-align: center;
-  margin: 12.5vh; }
+  margin: 7.5vh; }
   .section__title {
     font-size: 5rem;
     margin-bottom: 5rem;
@@ -119,6 +119,9 @@ svg {
 .btn {
   color: #782fff;
   position: relative; }
+
+.x, .menu {
+  display: none; }
 
 .apps {
   width: 100vw;
@@ -175,33 +178,33 @@ svg {
 
 .description {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  padding: 0 9%;
+  grid-gap: 5rem;
   color: #f9f7f6;
-  height: 60rem; }
+  margin: 6rem 0; }
   .description p {
     color: #aaa;
     margin-top: 1.5rem; }
   .description__left {
     display: grid;
-    grid-template-rows: 50% 50%;
-    justify-items: center;
-    align-items: center;
-    margin: auto 10% auto 25%; }
-    .description__left__top {
-      margin-bottom: 4rem; }
-    .description__left__bottom {
-      margin-top: 5rem; }
-  .description__rigth {
+    grid-gap: 2rem; }
+  .description__rigth__center {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .description__rigth__center {
-      margin: auto 25% auto 10%; }
-    .description__rigth img {
-      border-radius: 50%;
-      width: 8rem;
-      height: 8rem;
-      margin-bottom: 1rem; }
+    .description__rigth__center h1 {
+      display: flex;
+      flex-direction: column; }
+      .description__rigth__center h1 span {
+        font-size: 1rem; }
+  .description__rigth img {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin-right: 2rem;
+    font-size: 2rem; }
 
 .promotion {
   display: flex;
@@ -213,7 +216,7 @@ svg {
     margin-top: 3rem;
     width: 50%;
     color: #f9f7f6;
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-bottom: 2.5rem; }
   .promotion__subTitle {
     width: 50%;
@@ -281,8 +284,8 @@ svg {
 .prices {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 30px;
-  margin: auto; }
+  grid-gap: 5rem;
+  padding: 0 7rem; }
   .prices__plata, .prices__bronce, .prices__oro {
     position: relative;
     border-radius: 3.5rem;
@@ -369,36 +372,152 @@ svg {
 .us {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-gap: 2rem;
-  padding: 0 4rem;
   color: #f9f7f6;
   margin-bottom: 5rem;
   background: linear-gradient(to bottom, #431596, #2B0F60);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .us__main {
-    margin: auto; }
+    margin: auto;
+    padding: 0 3rem; }
   .us__img > div {
     margin: auto; }
 
 .team {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-gap: 2rem;
-  padding: 0 4rem;
   margin-bottom: 5rem; }
   .team__paragraph {
     text-align: center;
-    margin: auto; }
+    margin: auto;
+    padding: 0 3rem; }
   .team__video {
     margin: auto;
     border-radius: 2rem;
-    width: 100%;
+    width: 90%;
     height: auto; }
 
 .container__btn {
   display: flex;
   justify-content: center;
   margin-top: 2rem; }
+
+.cmain {
+  text-align: center;
+  background: linear-gradient(to bottom, #431596, #2B0F60);
+  margin-bottom: 3rem; }
+  .cmain__title {
+    color: #f9f7f6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3rem; }
+
+.btn {
+  font-size: 2rem; }
+
+.cgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3.5rem;
+  padding: 0 20rem;
+  align-items: center; }
+  .cgrid__brand {
+    text-align: center; }
+    .cgrid__brand > img {
+      width: 90%;
+      height: auto;
+      border-radius: 2rem; }
+
+.cdescription {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  .cdescription__left {
+    padding: 0 20%;
+    color: #f9f7f6;
+    margin: auto; }
+  .cdescription__rigth {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .cdescription__rigth > img {
+      width: 80%;
+      height: 80%;
+      border-radius: 2rem; }
+
+@media (max-width: 700px) {
+  .x, .menu {
+    display: block; }
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-content: center; }
+    .navigation__display {
+      width: 90vw !important;
+      transition: all 1s; }
+    .navigation__list {
+      width: 0;
+      flex-direction: column;
+      position: fixed;
+      top: 20vh;
+      align-items: center;
+      border-radius: 2rem;
+      padding: 0;
+      overflow: hidden;
+      padding: 3rem 0;
+      z-index: 1000000;
+      transition: all 1s; }
+      .navigation__list::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: #431596;
+        top: -10rem;
+        filter: blur(60px); }
+      .navigation__list__item {
+        z-index: 100;
+        padding: 1rem 0; }
+      .navigation__list > .x {
+        position: absolute;
+        right: 25px;
+        top: 20px;
+        border-radius: 100px;
+        border: 1px solid #A4A4A4; }
+  .section__title {
+    font-size: 2rem;
+    padding-bottom: 2rem; }
+  .btn {
+    font-size: 1.3rem; }
+  .slider > h1 {
+    font-size: 2.3rem; }
+  .promotion__title {
+    margin-top: 6rem;
+    font-size: 3rem; }
+  .us__main {
+    padding-bottom: 3rem; }
+  .team__paragraph {
+    padding: 0 3rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-bottom: 3rem; }
+  .cgrid {
+    grid-gap: 2.5rem;
+    padding: 3rem 3rem; }
+  .cdescription {
+    padding-top: 3rem;
+    text-align: center; }
+  .information__text {
+    grid-row-start: 1; }
+  .prices {
+    grid-gap: 0;
+    padding: 0; }
+  .prices__bronce, .prices__oro {
+    transform: scale(0.7); }
+  .prices__plata {
+    transform: scale(0.9); }
+  .title__section {
+    padding-bottom: 0rem; } }
 
 .btn {
   background-color: #26F0F1;
@@ -1142,153 +1261,153 @@ svg {
   animation: shooting 10s infinite ease; }
 
 .shootingstar:nth-child(1) {
-  left: 120px;
-  top: 22px;
+  left: 210px;
+  top: 121px;
   animation-delay: calc(-400s / 1); }
 
 .shootingstar:nth-child(2) {
-  left: 102px;
-  top: 118px;
+  left: 77px;
+  top: 2px;
   animation-delay: calc(-400s / 2); }
 
 .shootingstar:nth-child(3) {
-  left: 84px;
-  top: 274px;
+  left: 283px;
+  top: 18px;
   animation-delay: calc(-400s / 3); }
 
 .shootingstar:nth-child(4) {
-  left: 165px;
-  top: 10px;
+  left: 163px;
+  top: 231px;
   animation-delay: calc(-400s / 4); }
 
 .shootingstar:nth-child(5) {
-  left: 102px;
-  top: 65px;
+  left: 104px;
+  top: 183px;
   animation-delay: calc(-400s / 5); }
 
 .shootingstar:nth-child(6) {
-  left: 193px;
-  top: 175px;
+  left: 159px;
+  top: 181px;
   animation-delay: calc(-400s / 6); }
 
 .shootingstar:nth-child(7) {
-  left: 124px;
-  top: 166px;
+  left: 81px;
+  top: 200px;
   animation-delay: calc(-400s / 7); }
 
 .shootingstar:nth-child(8) {
-  left: 195px;
-  top: 252px;
+  left: 106px;
+  top: 66px;
   animation-delay: calc(-400s / 8); }
 
 .shootingstar:nth-child(9) {
-  left: 68px;
-  top: 151px;
+  left: 78px;
+  top: 17px;
   animation-delay: calc(-400s / 9); }
 
 .shootingstar:nth-child(10) {
-  left: 17px;
-  top: 230px;
+  left: 61px;
+  top: 211px;
   animation-delay: calc(-400s / 10); }
 
 .shootingstar:nth-child(11) {
-  left: 264px;
-  top: 175px;
+  left: 90px;
+  top: 73px;
   animation-delay: calc(-400s / 11); }
 
 .shootingstar:nth-child(12) {
-  left: 44px;
-  top: 118px;
+  left: 28px;
+  top: 15px;
   animation-delay: calc(-400s / 12); }
 
 .shootingstar:nth-child(13) {
-  left: 103px;
-  top: 285px;
+  left: 38px;
+  top: 58px;
   animation-delay: calc(-400s / 13); }
 
 .shootingstar:nth-child(14) {
-  left: 82px;
-  top: 153px;
+  left: 205px;
+  top: 118px;
   animation-delay: calc(-400s / 14); }
 
 .shootingstar:nth-child(15) {
-  left: 282px;
-  top: 135px;
+  left: 279px;
+  top: 95px;
   animation-delay: calc(-400s / 15); }
 
 .shootingstar:nth-child(16) {
-  left: 195px;
-  top: 282px;
+  left: 290px;
+  top: 216px;
   animation-delay: calc(-400s / 16); }
 
 .shootingstar:nth-child(17) {
-  left: 89px;
-  top: 219px;
+  left: 195px;
+  top: 214px;
   animation-delay: calc(-400s / 17); }
 
 .shootingstar:nth-child(18) {
-  left: 100px;
-  top: 6px;
+  left: 202px;
+  top: 220px;
   animation-delay: calc(-400s / 18); }
 
 .shootingstar:nth-child(19) {
-  left: 44px;
-  top: 92px;
+  left: 183px;
+  top: 293px;
   animation-delay: calc(-400s / 19); }
 
 .shootingstar:nth-child(20) {
-  left: 182px;
-  top: 17px;
+  left: 51px;
+  top: 270px;
   animation-delay: calc(-400s / 20); }
 
 .shootingstar:nth-child(21) {
-  left: 117px;
-  top: 215px;
+  left: 84px;
+  top: 272px;
   animation-delay: calc(-400s / 21); }
 
 .shootingstar:nth-child(22) {
-  left: 40px;
-  top: 283px;
+  left: 201px;
+  top: 77px;
   animation-delay: calc(-400s / 22); }
 
 .shootingstar:nth-child(23) {
-  left: 139px;
-  top: 261px;
+  left: 92px;
+  top: 255px;
   animation-delay: calc(-400s / 23); }
 
 .shootingstar:nth-child(24) {
-  left: 162px;
-  top: 154px;
+  left: 57px;
+  top: 185px;
   animation-delay: calc(-400s / 24); }
 
 .shootingstar:nth-child(25) {
-  left: 39px;
-  top: 9px;
+  left: 145px;
+  top: 169px;
   animation-delay: calc(-400s / 25); }
 
 .shootingstar:nth-child(26) {
-  left: 9px;
-  top: 52px;
+  left: 99px;
+  top: 116px;
   animation-delay: calc(-400s / 26); }
 
 .shootingstar:nth-child(27) {
-  left: 113px;
-  top: 46px;
+  left: 272px;
+  top: 167px;
   animation-delay: calc(-400s / 27); }
 
 .shootingstar:nth-child(28) {
-  left: 101px;
-  top: 198px;
+  left: 93px;
+  top: 273px;
   animation-delay: calc(-400s / 28); }
 
 .shootingstar:nth-child(29) {
-  left: 63px;
-  top: 14px;
+  left: 99px;
+  top: 120px;
   animation-delay: calc(-400s / 29); }
 
 .shootingstar:nth-child(30) {
-  left: 136px;
-  top: 111px;
+  left: 43px;
+  top: 83px;
   animation-delay: calc(-400s / 30); }
 
 @keyframes shooting {

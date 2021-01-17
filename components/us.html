@@ -7,11 +7,15 @@
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 </head>
-<body">
+<body>
     <nav class="navigation nav--us">
         <div class="navigation__logo"><a href="#">KIDOSOFT</a></div>
+        <box-icon name='menu-alt-right' size="50px" color="#f9f7f6" class="menu"></box-icon>
         <ul class="navigation__list">
+            <box-icon name='x' class="navigation__list__item x" size="30px" color="#A4A4A4" ></box-icon>
             <li class="navigation__list__item"><a class="navigation__list--anchor" href="#">Clientes</a></li>
             <li class="navigation__list__item"><a class="navigation__list--anchor" href="#">Servicios</a></li>
             <li class="navigation__list__item"><a class="navigation__list--anchor" href="#">Nosotros</a></li>
@@ -93,14 +97,15 @@
         <video class="team__video" width="320" height="240" autoplay loop>
             <source src="../img/video.mp4" type="video/mp4">
         </video>
-        <h3 class="team__paragraph">Nuestra meta es <span>brindarte</span> las herramientas para el <span>depegue</span> de tu negocio.</h3>
+        <h3 class="team__paragraph"></box-icon>Nuestra meta es <span>brindarte</span> las herramientas para el <span>depegue</span> de tu negocio.</h3>
     </section>
     <div class="container__btn">
         <a class="btn prices__button" href="https://twitter.com/home?lang=es" > Obtener Promoción</a>
     </div>
     <footer class="footer">
         <div class="footer__left">KIDOSOFT ℠</div>
-        <div class="footer__rigth"><span>Diseñado y construido con mucho cariño</span> 🖤 <span>para apoyar</span> <br><span>a las pequeñas empresas de nuestro Perú</span> 🇵🇪</div>
+        <div class="footer__rigth"><span>Diseñado y construido con mucho cariño</span> 🖤 <span>para apoyar</span> <span>a las pequeñas empresas de nuestro Perú</span> 🇵🇪</div>
     </footer>
 </body>
+<script src="../index.js"></script>
 </html>
