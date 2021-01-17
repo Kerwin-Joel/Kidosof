@@ -228,7 +228,7 @@ svg {
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   grid-gap: 3rem;
   justify-items: center;
   align-items: center;
@@ -283,7 +283,7 @@ svg {
 
 .prices {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-gap: 5rem;
   padding: 0 7rem; }
   .prices__plata, .prices__bronce, .prices__oro {
@@ -357,8 +357,6 @@ svg {
     font-size: 2rem;
     margin: 1rem;
     margin-bottom: 2rem; }
-  .prices__bronce, .prices__oro {
-    transform: scale(0.9); }
 
 .title {
   margin: 5rem;
@@ -485,8 +483,7 @@ svg {
         border-radius: 100px;
         border: 1px solid #A4A4A4; }
   .section__title {
-    font-size: 2rem;
-    padding-bottom: 2rem; }
+    font-size: 2rem; }
   .btn {
     font-size: 1.3rem; }
   .slider > h1 {
@@ -509,6 +506,9 @@ svg {
     text-align: center; }
   .information__text {
     grid-row-start: 1; }
+  .title__section {
+    padding: 0 1.5rem;
+    padding-top: 2rem; }
   .prices {
     grid-gap: 0;
     padding: 0; }
@@ -517,7 +517,14 @@ svg {
   .prices__plata {
     transform: scale(0.9); }
   .title__section {
-    padding-bottom: 0rem; } }
+    padding-bottom: 0rem; }
+  .header img {
+    width: 35rem;
+    height: 45rem;
+    opacity: 0.5; }
+  .cbh-phone {
+    right: -57px;
+    bottom: -48px; } }
 
 .btn {
   background-color: #26F0F1;
@@ -1261,153 +1268,153 @@ svg {
   animation: shooting 10s infinite ease; }
 
 .shootingstar:nth-child(1) {
-  left: 210px;
-  top: 121px;
+  left: 85px;
+  top: 237px;
   animation-delay: calc(-400s / 1); }
 
 .shootingstar:nth-child(2) {
-  left: 77px;
-  top: 2px;
+  left: 220px;
+  top: 202px;
   animation-delay: calc(-400s / 2); }
 
 .shootingstar:nth-child(3) {
-  left: 283px;
-  top: 18px;
+  left: 124px;
+  top: 16px;
   animation-delay: calc(-400s / 3); }
 
 .shootingstar:nth-child(4) {
-  left: 163px;
-  top: 231px;
+  left: 86px;
+  top: 188px;
   animation-delay: calc(-400s / 4); }
 
 .shootingstar:nth-child(5) {
-  left: 104px;
-  top: 183px;
+  left: 229px;
+  top: 288px;
   animation-delay: calc(-400s / 5); }
 
 .shootingstar:nth-child(6) {
-  left: 159px;
-  top: 181px;
+  left: 275px;
+  top: 178px;
   animation-delay: calc(-400s / 6); }
 
 .shootingstar:nth-child(7) {
-  left: 81px;
-  top: 200px;
+  left: 2px;
+  top: 42px;
   animation-delay: calc(-400s / 7); }
 
 .shootingstar:nth-child(8) {
-  left: 106px;
-  top: 66px;
+  left: 193px;
+  top: 264px;
   animation-delay: calc(-400s / 8); }
 
 .shootingstar:nth-child(9) {
-  left: 78px;
-  top: 17px;
+  left: 226px;
+  top: 168px;
   animation-delay: calc(-400s / 9); }
 
 .shootingstar:nth-child(10) {
-  left: 61px;
-  top: 211px;
+  left: 45px;
+  top: 204px;
   animation-delay: calc(-400s / 10); }
 
 .shootingstar:nth-child(11) {
-  left: 90px;
-  top: 73px;
+  left: 248px;
+  top: 275px;
   animation-delay: calc(-400s / 11); }
 
 .shootingstar:nth-child(12) {
-  left: 28px;
-  top: 15px;
+  left: 235px;
+  top: 37px;
   animation-delay: calc(-400s / 12); }
 
 .shootingstar:nth-child(13) {
-  left: 38px;
-  top: 58px;
+  left: 273px;
+  top: 35px;
   animation-delay: calc(-400s / 13); }
 
 .shootingstar:nth-child(14) {
-  left: 205px;
-  top: 118px;
+  left: 124px;
+  top: 16px;
   animation-delay: calc(-400s / 14); }
 
 .shootingstar:nth-child(15) {
-  left: 279px;
-  top: 95px;
+  left: 198px;
+  top: 266px;
   animation-delay: calc(-400s / 15); }
 
 .shootingstar:nth-child(16) {
-  left: 290px;
+  left: 283px;
   top: 216px;
   animation-delay: calc(-400s / 16); }
 
 .shootingstar:nth-child(17) {
-  left: 195px;
-  top: 214px;
+  left: 197px;
+  top: 199px;
   animation-delay: calc(-400s / 17); }
 
 .shootingstar:nth-child(18) {
-  left: 202px;
-  top: 220px;
+  left: 242px;
+  top: 170px;
   animation-delay: calc(-400s / 18); }
 
 .shootingstar:nth-child(19) {
-  left: 183px;
-  top: 293px;
+  left: 100px;
+  top: 155px;
   animation-delay: calc(-400s / 19); }
 
 .shootingstar:nth-child(20) {
-  left: 51px;
-  top: 270px;
+  left: 300px;
+  top: 271px;
   animation-delay: calc(-400s / 20); }
 
 .shootingstar:nth-child(21) {
-  left: 84px;
-  top: 272px;
+  left: 265px;
+  top: 130px;
   animation-delay: calc(-400s / 21); }
 
 .shootingstar:nth-child(22) {
-  left: 201px;
-  top: 77px;
+  left: 234px;
+  top: 11px;
   animation-delay: calc(-400s / 22); }
 
 .shootingstar:nth-child(23) {
-  left: 92px;
-  top: 255px;
+  left: 129px;
+  top: 122px;
   animation-delay: calc(-400s / 23); }
 
 .shootingstar:nth-child(24) {
-  left: 57px;
-  top: 185px;
+  left: 80px;
+  top: 58px;
   animation-delay: calc(-400s / 24); }
 
 .shootingstar:nth-child(25) {
-  left: 145px;
-  top: 169px;
+  left: 144px;
+  top: 47px;
   animation-delay: calc(-400s / 25); }
 
 .shootingstar:nth-child(26) {
-  left: 99px;
-  top: 116px;
+  left: 59px;
+  top: 13px;
   animation-delay: calc(-400s / 26); }
 
 .shootingstar:nth-child(27) {
-  left: 272px;
-  top: 167px;
+  left: 236px;
+  top: 257px;
   animation-delay: calc(-400s / 27); }
 
 .shootingstar:nth-child(28) {
-  left: 93px;
-  top: 273px;
+  left: 230px;
+  top: 266px;
   animation-delay: calc(-400s / 28); }
 
 .shootingstar:nth-child(29) {
-  left: 99px;
-  top: 120px;
+  left: 163px;
+  top: 64px;
   animation-delay: calc(-400s / 29); }
 
 .shootingstar:nth-child(30) {
-  left: 43px;
-  top: 83px;
+  left: 176px;
+  top: 164px;
   animation-delay: calc(-400s / 30); }
 
 @keyframes shooting {

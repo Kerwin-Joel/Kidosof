@@ -1,6 +1,8 @@
+@import "../abstracts/variables";
+
 .prices{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
     grid-gap: 5rem;
     padding: 0 7rem;
 
@@ -92,9 +94,6 @@
         font-size:2rem;
         margin: 1rem;
         margin-bottom: 2rem;
-    }
-    &__bronce,&__oro{
-        transform: scale(.9);
     }
 }
 .title{
